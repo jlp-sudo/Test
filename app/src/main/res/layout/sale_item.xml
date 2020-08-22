@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/head_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:textColor="#586b95"
+        android:textStyle="bold"
+        android:text="多喝水少熬夜"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toEndOf="@id/head_image"
+        app:layout_constraintTop_toTopOf="@id/head_image"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:text="1小时前"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_name"
+        android:text="商品名称：闲置衣物"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/head_image"
+        app:layout_constraintTop_toBottomOf="@id/head_image"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productIntro"
+        android:text="商品介绍：哈哈哈哈哈哈哈哈哈哈"
+        app:layout_constraintStart_toStartOf="@id/product_name"
+        app:layout_constraintTop_toBottomOf="@id/product_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_price"
+        android:text="商品价格：￥100.00"
+        app:layout_constraintStart_toStartOf="@id/productIntro"
+        app:layout_constraintTop_toBottomOf="@id/productIntro" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_image"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintStart_toStartOf="@id/product_price"
+        app:layout_constraintTop_toBottomOf="@id/product_price"
+        />
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ededed"
+        app:layout_constraintTop_toBottomOf="@+id/product_image"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
